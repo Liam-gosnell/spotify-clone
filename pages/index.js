@@ -1,11 +1,9 @@
-
+import Sidebar from '../components/Sidebar';
 export default function Home() {
   return (
     <div className="">
-      <h1>This is a Spotify Build</h1>
-      
       <main>
-        {/* Sidebar */}
+        <Sidebar />
         {/* Center */ }
       </main>
 
