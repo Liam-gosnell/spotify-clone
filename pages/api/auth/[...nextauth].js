@@ -35,7 +35,6 @@ export default NextAuth({
       clientId: process.env.NEXT_PUBLIC_CLIENT_ID,
       clientSecret: process.env.NEXT_PUBLIC_CLIENT_SECRET,
       authorization: LOGIN_URL,
-
     }),
     // ...add more providers here
   ],
@@ -46,7 +45,6 @@ export default NextAuth({
   },
   callbacks: {
     async jwt ({token, account, user}){
-
 
       // initial sign in 
       if (account && user) {
