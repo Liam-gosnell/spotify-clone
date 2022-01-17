@@ -33,7 +33,7 @@ export default NextAuth({
   providers: [
     SpotifyProvider({
       clientId: process.env.NEXT_PUBLIC_CLIENT_ID,
-      clientSecret: process.env.NEXT_PUBLIC_CLIENT_SECRET,
+      clientSecret: process.env.NEXT_PUBLIC_CLEINT_SECRET,
       authorization: LOGIN_URL,
     }),
     // ...add more providers here
@@ -44,7 +44,7 @@ export default NextAuth({
     signIn: '/login'
   },
   callbacks: {
-    async jwt ({token, account, user}){
+    async jwt({token, account, user}){
 
       // initial sign in 
       if (account && user) {
